@@ -1,0 +1,114 @@
+DATA:
+  MAX_SAMPLE_INTERVAL: 400
+  ALLOW_INVISIBLE: 0.0
+  ALLOW_DISTRACTOR: 0.0
+  ALLOW_TEXTLOCAL_RAND: 0.0
+  ONLY_TEXT_DATA: True
+  CLS_EPOCH: 0
+  MULTI_MODAL_LANGUAGE: True
+  MULTI_MODAL_VISION: False
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  SEARCH:
+    CENTER_JITTER: 4.5
+    FACTOR: 5.0
+    SCALE_JITTER: 0.5
+    SIZE: 384
+    NUMBER: 1
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TEMPLATE:
+    CENTER_JITTER: 3.5
+    FACTOR: 2.0
+    SCALE_JITTER: 0.5
+    SIZE: 192
+    NUMBER: 1
+    PROB_TEMP: 0.3
+  TRAIN:
+    DATASETS_NAME:
+    - LASOT
+    - TNL2K_train
+    - VASTTRACK
+    - GOT10K_vottrain
+    - COCO17
+    - TRACKINGNET
+    DATASETS_RATIO:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    SAMPLE_PER_EPOCH: 60000
+  USE_NLP:
+    TNL2K: True
+    LASOT: True
+    OTB99: True
+    VASTTRACK: True
+MODEL:
+  ENCODER:
+    TYPE: fastitpnl
+    STRIDE: 16
+    PRETRAIN_TYPE: 'pretrained/itpn/fast_itpn_large_1600e_1k.pt' # This parameter is not activated for now.
+    PATCHEMBED_INIT: halfcopy
+    DROP_PATH: 0.1
+    TOKEN_TYPE_INDICATE: True
+    TEXT_INPUT_MODE: concat
+    CLASS_TOKEN: True
+    CLASS_POS: 'start'
+  TEXT_ENCODER:
+    TYPE: ViT-L/14
+    USECOOP: True
+    NUM_CTX: 8
+    FEAT_TYPE: 'last' #all/last
+    MAX_LEN: 40
+    COCOOP_TYPE: 'search'
+  DECODER:
+    TYPE: CENTER
+    NUM_CHANNELS: 256
+    CONV_TYPE: normal
+    XAVIER_INIT: True
+  TASK_DECODER:
+    NUM_CHANNELS: 256
+    FEATURE_TYPE: average_local
+  CLS_NUM: 3
+TRAIN:
+  TYPE: text_frozen
+  ENCODER_MULTIPLIER: 0.1
+  COOP_MULTIPLIER: 1
+  BATCH_SIZE: 8
+  EPOCH: 300
+  GRAD_CLIP_NORM: 0.1
+  LR: 0.0001
+  LR_DROP_EPOCH: 240
+  NUM_WORKER: 10
+  OPTIMIZER: ADAMW
+  PRINT_INTERVAL: 50
+  SCHEDULER:
+    TYPE: step
+    DECAY_RATE: 0.1
+  WEIGHT_DECAY: 0.0001
+  TEXT_WEIGHT: 0.0
+  TASK_CE_WEIGHT: 0.0
+  CLIP_WEIGHT: 0.0
+  CLIP_FEAT_STAGE: 'cross' #'cross'
+  CLIP_WITH: 'cls'
+  CLIP_TEMP_LEARN: True
+TEST:
+  EPOCH: 300
+  SEARCH_FACTOR: 5.0
+  SEARCH_SIZE: 384
+  TEMPLATE_FACTOR: 2.0
+  TEMPLATE_SIZE: 192
+  WINDOW: True
+  MULTI_MODAL_VISION:
+    DEFAULT: False
+  MULTI_MODAL_LANGUAGE:
+    DEFAULT: True
+  USE_NLP:
+    DEFAULT: True
+    TNL2K: True
