@@ -20,4 +20,12 @@ The required pretrained models are provided [here[pwd:c5ie]](https://pan.baidu.c
 We also release our models [here[pwd:jpj8]](https://pan.baidu.com/s/1SxN8KQTYtQvfW5oyjmppMQ?pwd=jpj8) and results [here[pwd:nrkw]](https://pan.baidu.com/s/1NwOm1RU5AfHnQpZBmJLRmQ?pwd=nrkw).
 
 ## Acknowledgments
-We acknowledge prior excellent works ([SUTrack](https://github.com/chenxin-dlut/SUTrack)) and ([CoCoOP](https://github.com/KaiyangZhou/CoOp)) for inspiring our SAVLT methodology. 
+We acknowledge prior excellent works ([SUTrack](https://github.com/chenxin-dlut/SUTrack)) and ([CoCoOP](https://github.com/KaiyangZhou/CoOp)) for inspiring our methodology. If you find this work helpful to your research, we would appreciate it if you consider citing our paper.
+```
+@article{zhaoself,
+  title={Self-Adaptive Vision-Language Tracking with Context Prompting},
+  author={Zhao, Jie and Chen, Xin and Li, Shengming and Bo, Chunjuan and Wang, Dong and Lu, Huchuan},
+  journal={IEEE Transactions on Image Processing},
+  year={2026}
+}
+```
