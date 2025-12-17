@@ -12,7 +12,7 @@ To address the substantial gap between vision and language modalities, along wit
 Please refer to install.sh for environment installation, and set your own project/model/data paths.
 
 ## Training and Testing
-Please see eval.sh to find the commands for training and testing.
+Please see eval.sh to find the commands for training and testing. Commands for language-only tracking can be found in eval_nl.sh.
 
 ## Models and Results
 The required pretrained models are provided [here[pwd:c5ie]](https://pan.baidu.com/s/1bDNAXnV-sSQePm4GkEQtRQ?pwd=c5ie). (Please download, extract, and place them in your own project directory)
