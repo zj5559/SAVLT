@@ -15,9 +15,9 @@ Please refer to install.sh for environment installation, and set your own projec
 Please see eval.sh to find the commands for training and testing.
 
 ## Models and Results
-The required pretrained models are provided [here[pwd:c5ie]]([https://pan.baidu.com/s/1bDNAXnV-sSQePm4GkEQtRQ?pwd=c5ie]). (Please download, extract, and place them in your own project directory) 
+The required pretrained models are provided [here[pwd:c5ie]](https://pan.baidu.com/s/1bDNAXnV-sSQePm4GkEQtRQ?pwd=c5ie). (Please download, extract, and place them in your own project directory)
 
-We also release our models [here[pwd:jpj8]]([https://pan.baidu.com/s/1SxN8KQTYtQvfW5oyjmppMQ?pwd=jpj8]) and results [here[pwd:nrkw]]([https://pan.baidu.com/s/1NwOm1RU5AfHnQpZBmJLRmQ?pwd=nrkw]).
+We also release our models [here[pwd:jpj8]](https://pan.baidu.com/s/1SxN8KQTYtQvfW5oyjmppMQ?pwd=jpj8) and results [here[pwd:nrkw]](https://pan.baidu.com/s/1NwOm1RU5AfHnQpZBmJLRmQ?pwd=nrkw).
 
 ## Acknowledgments
-We acknowledge prior excellent works ([SUTrack](https://github.com/chenxin-dlut/SUTrack)) and ([CoCoOP](https://github.com/KaiyangZhou/CoOp) for inspiring our SAVLT methodology. 
+We acknowledge prior excellent works ([SUTrack](https://github.com/chenxin-dlut/SUTrack)) and ([CoCoOP](https://github.com/KaiyangZhou/CoOp)) for inspiring our SAVLT methodology. 
