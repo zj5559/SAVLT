@@ -17,7 +17,7 @@ Please see eval.sh to find the commands for training and testing. Commands for l
 ## Models and Results
 The required pretrained models are provided [here[pwd:c5ie]](https://pan.baidu.com/s/1bDNAXnV-sSQePm4GkEQtRQ?pwd=c5ie). (Please download, extract, and place them in your own project directory)
 
-We also release our models [here[pwd:jpj8]](https://pan.baidu.com/s/1SxN8KQTYtQvfW5oyjmppMQ?pwd=jpj8) and results [here[pwd:nrkw]](https://pan.baidu.com/s/1NwOm1RU5AfHnQpZBmJLRmQ?pwd=nrkw).
+We also release our models [here[pwd:2v8c]](https://pan.baidu.com/s/1QGGBWOD2wG6Aqoxz6w8iEg?pwd=2v8c) and results [here[pwd:725s]](链接: https://pan.baidu.com/s/1owe3Ecs8ZewWacEF1CjBmw?pwd=725s).
 
 ## Acknowledgments
 We acknowledge prior excellent works ([SUTrack](https://github.com/chenxin-dlut/SUTrack)) and ([CoCoOP](https://github.com/KaiyangZhou/CoOp)) for inspiring our methodology. If you find this work helpful to your research, we would appreciate it if you consider citing our paper.
